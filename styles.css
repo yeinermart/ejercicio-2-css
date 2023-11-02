@@ -1,0 +1,736 @@
+.contenedor{
+    width: 1470px;
+    height: 680px;
+    background-color: #ccc;
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 10px; 
+}
+
+.headerr{
+    width: 1400px;
+    height: 100px;
+    background-color: greenyellow;
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 5px; 
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+.imagenes{
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Espacio entre las imágenes */
+    text-align: center;
+
+    width: 1400px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 5px; 
+
+    position: relative; /* controlar la posición de un elemento en relación con su posición original */
+    /*overflow: hidden;   /*ocultar el contenido que desborda los límites del contenedor */
+    
+}
+
+.imagen1 img {
+    width: 100%;
+    height: 100%;
+    transition: filter 0.3s; /* Transición suave para el efecto */
+}
+
+.imagen1 img:hover{
+    filter: brightness(50%); /* Reduce el brillo al 50% al pasar el mouse */
+}
+.imagen1 .descripcion1 {
+    position: absolute; /*el elemento se coloca en una ubicación específica de la página  osea el texto*/
+    top: 150px;  /* Desde la parte superior */
+    left: 200px; /* Desde la izquierda */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el texto */
+    color: #fff;
+    padding: 10px;
+    opacity: 0; /* Inicialmente, el texto está oculto */
+    transition: opacity 0.3s; /* Transición suave para la opacidad */
+}
+
+.imagen1:hover .descripcion1 {
+    opacity: 1; /* Mostrar el texto cuando se pasa el mouse sobre la imagen */
+}
+
+.imagen2 img {
+    
+    width: 100%;
+    height: 100%;
+    transition: filter 0.3s; /* Transición suave para el efecto */
+
+}
+
+.imagen2 img:hover{
+    filter: brightness(50%); /* Reduce el brillo al 50% al pasar el mouse */
+}
+.imagen2 .descripcion2 {
+    position: absolute; /*el elemento se coloca en una ubicación específica de la página  osea el texto*/
+    top: 150px;  /* Desde la parte superior */
+    left: 650px; /* Desde la izquierda */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el texto */
+    color: #fff;
+    padding: 10px;
+    opacity: 0; /* Inicialmente, el texto está oculto */
+    transition: opacity 0.3s; /* Transición suave para la opacidad */
+}
+
+.imagen2:hover .descripcion2 {
+    opacity: 1; /* Mostrar el texto cuando se pasa el mouse sobre la imagen */
+}
+
+
+.imagen3 img {
+    
+    width: 100%;
+    height: 100%;
+    transition: filter 0.3s; /* Transición suave para el efecto */
+
+}
+
+.imagen3 img:hover{
+    filter: brightness(50%); /* Reduce el brillo al 50% al pasar el mouse */
+}
+.imagen3 .descripcion3 {
+    position: absolute; /*el elemento se coloca en una ubicación específica de la página  osea el texto*/
+    top: 150px;  /* Desde la parte superior */
+    left: 1100px; /* Desde la izquierda */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el texto */
+    color: #fff;
+    padding: 10px;
+    opacity: 0; /* Inicialmente, el texto está oculto */
+    transition: opacity 0.3s; /* Transición suave para la opacidad */
+}
+
+.imagen3:hover .descripcion3 {
+    opacity: 1; /* Mostrar el texto cuando se pasa el mouse sobre la imagen */
+}
+
+
+.footerr{
+    width: 1400px;
+    height: 100px;
+    background-color: rgb(47, 203, 255);
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 5px; 
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* avion --------------------------------------------------------------------------------------------------------------------- */
+
+.contenedor1{
+    width: 1470px;
+    height: 680px;
+    background-color: #cccccc;
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 10px; 
+}
+
+.headerr1{
+    width: 1400px;
+    height: 100px;
+    background-color: rgb(47, 255, 64);
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 5px; 
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+.imagenes1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px; /* Espacio entre las imágenes */
+    text-align: center;
+
+    width: 1400px;
+    height: 360px;
+    background-color: white;
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 5px; 
+
+    position: relative; 
+}
+
+.nav1{
+    width: 400px;
+    height: 330px;
+    background-color: rgb(47, 203, 255);
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 5px; 
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+ul {
+    list-style-type: none; /* Quita los puntos predeterminados de las listas */
+    padding: 0;  /* Quita el relleno predeterminado de la lista */
+}
+li {
+    margin: 50px 0; /* Espacio entre elementos de la lista */
+  }
+
+  .contenidofotos{
+    display:grid;
+    grid-template-rows: 2fr 1fr 3fr;
+    grid-gap:3px;
+  }
+  
+  .contenidofotos > div{
+   border:2px solid black;
+   text-align:center;
+   background-color:rgba(80, 146, 251, 0.267);
+   padding:5px;
+   font-size:10px;
+   font-weight:bold;
+  }
+
+.seccion1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px; /* Espacio entre las imágenes */
+    text-align: center;
+ } 
+ .AVION1 {
+    /*overflow: hidden;  /*Oculta el contenido que se desborda */
+    position: relative;
+    width: 400px; /* Ancho de tu imagen */
+    height: 80px; /* Alto de tu imagen */
+  }
+  
+  .AVION1 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .AVION1:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+  .AVION2 {
+    position: relative;
+    width: 400px; /* Ancho de tu imagen */
+    height: 80px; /* Alto de tu imagen */
+  }
+  
+  .AVION2 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .AVION2:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+  
+.seccion2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px; /* Espacio entre las imágenes */
+    text-align: center;
+} 
+.AVION3 {
+    position: relative;
+    width: 250px; /* Ancho de tu imagen */
+    height: 42px; /* Alto de tu imagen */
+  }
+  
+  .AVION3 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .AVION3:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+  .AVION4 {
+    position: relative;
+    width: 250px; /* Ancho de tu imagen */
+    height: 42px; /* Alto de tu imagen */
+  }
+  
+  .AVION4 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .AVION4:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+  .AVION5 {
+    position: relative;
+    width: 250px; /* Ancho de tu imagen */
+    height: 42px; /* Alto de tu imagen */
+  }
+  
+  .AVION5 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .AVION5:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+.seccion3{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px; /* Espacio entre las imágenes */
+    text-align: center;
+} 
+.AVION6 {
+    position: relative;
+    width: 300px; /* Ancho de tu imagen */
+    height: 150px; /* Alto de tu imagen */
+  }
+  
+  .AVION6 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .AVION6:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+  .AVION7 {
+    position: relative;
+    width: 300px; /* Ancho de tu imagen */
+    height: 150px; /* Alto de tu imagen */
+  }
+  
+  .AVION7 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .AVION7:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+.footerr1{
+    width: 1400px;
+    height: 100px;
+    background-color: rgb(47, 203, 255);
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 5px; 
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* carro ------------------------------------------------------------------------------------------------------------------------------------- */
+
+.contenedor2{
+    width: 1470px;
+    height: 680px;
+    background-color: #cccccc;
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 10px; 
+}
+
+.headerr2{
+    width: 1400px;
+    height: 100px;
+    background-color: rgb(47, 255, 64);
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 5px; 
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+.imagenes2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px; /* Espacio entre las imágenes */
+    text-align: center;
+
+    width: 1400px;
+    height: 360px;
+    background-color: white;
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 5px; 
+
+    position: relative; 
+}
+
+.nav2{
+    width: 400px;
+    height: 330px;
+    background-color: rgb(47, 203, 255);
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 5px; 
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+ul {
+    list-style-type: none; /* Quita los puntos predeterminados de las listas */
+    padding: 0;  /* Quita el relleno predeterminado de la lista */
+}
+li {
+    margin: 50px 0; /* Espacio entre elementos de la lista */
+  }
+
+  .contenidofotos2{
+    display:grid;
+    grid-template-rows: 2fr 1fr 3fr;
+    grid-gap:3px;
+  }
+  
+  .contenidofotos2 > div{
+   border:2px solid black;
+   text-align:center;
+   background-color:rgba(80, 146, 251, 0.267);
+   padding:5px;
+   font-size:10px;
+   font-weight:bold;
+  }
+
+.seccion11{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px; /* Espacio entre las imágenes */
+    text-align: center;
+ } 
+ .CARRO1 {
+    /*overflow: hidden;  /*Oculta el contenido que se desborda */
+    position: relative;
+    width: 400px; /* Ancho de tu imagen */
+    height: 80px; /* Alto de tu imagen */
+  }
+  
+  .CARRO1 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .CARRO1:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+  .CARRO2 {
+    position: relative;
+    width: 400px; /* Ancho de tu imagen */
+    height: 80px; /* Alto de tu imagen */
+  }
+  
+  .CARRO2 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .CARRO2:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+  
+.seccion22{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px; /* Espacio entre las imágenes */
+    text-align: center;
+} 
+.CARRO3 {
+    position: relative;
+    width: 250px; /* Ancho de tu imagen */
+    height: 42px; /* Alto de tu imagen */
+  }
+  
+  .CARRO3 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .CARRO3:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+  .CARRO4 {
+    position: relative;
+    width: 250px; /* Ancho de tu imagen */
+    height: 42px; /* Alto de tu imagen */
+  }
+  
+  .CARRO4 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .CARRO4:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+  .CARRO5 {
+    position: relative;
+    width: 250px; /* Ancho de tu imagen */
+    height: 42px; /* Alto de tu imagen */
+  }
+  
+  .CARRO5 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .CARRO5:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+.seccion33{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px; /* Espacio entre las imágenes */
+    text-align: center;
+} 
+.CARRO6 {
+    position: relative;
+    width: 300px; /* Ancho de tu imagen */
+    height: 150px; /* Alto de tu imagen */
+  }
+  
+  .CARRO6 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .CARRO6:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+  .CARRO7 {
+    position: relative;
+    width: 300px; /* Ancho de tu imagen */
+    height: 150px; /* Alto de tu imagen */
+  }
+  
+  .CARRO7 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .CARRO7:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+.footerr2{
+    width: 1400px;
+    height: 100px;
+    background-color: rgb(47, 203, 255);
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 5px; 
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* MOTOCICLETAS ----------------------------------------------------------------------------------------------------------------------- */
+
+.contenedor3{
+    width: 1470px;
+    height: 680px;
+    background-color: #cccccc;
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 10px; 
+}
+
+.headerr3{
+    width: 1400px;
+    height: 100px;
+    background-color: rgb(47, 255, 64);
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 5px; 
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+.imagenes3{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px; /* Espacio entre las imágenes */
+    text-align: center;
+
+    width: 1400px;
+    height: 360px;
+    background-color: white;
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 5px; 
+
+    position: relative; 
+}
+
+.nav3{
+    width: 400px;
+    height: 330px;
+    background-color: rgb(47, 203, 255);
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 5px; 
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+ul {
+    list-style-type: none; /* Quita los puntos predeterminados de las listas */
+    padding: 0;  /* Quita el relleno predeterminado de la lista */
+}
+li {
+    margin: 50px 0; /* Espacio entre elementos de la lista */
+  }
+
+  .contenidofotos3{
+    display:grid;
+    grid-template-rows: 2fr 1fr 3fr;
+    grid-gap:3px;
+  }
+  
+  .contenidofotos3 > div{
+   border:2px solid black;
+   text-align:center;
+   background-color:rgba(80, 146, 251, 0.267);
+   padding:5px;
+   font-size:10px;
+   font-weight:bold;
+  }
+
+.seccion111{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px; /* Espacio entre las imágenes */
+    text-align: center;
+ } 
+ .MOTO1 {
+    /*overflow: hidden;  /*Oculta el contenido que se desborda */
+    position: relative;
+    width: 400px; /* Ancho de tu imagen */
+    height: 80px; /* Alto de tu imagen */
+  }
+  
+  .MOTO1 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .MOTO1:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+  .MOTO2 {
+    position: relative;
+    width: 400px; /* Ancho de tu imagen */
+    height: 80px; /* Alto de tu imagen */
+  }
+  
+  .MOTO2 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .MOTO2:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+  
+.seccion222{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px; /* Espacio entre las imágenes */
+    text-align: center;
+} 
+.MOTO3 {
+    position: relative;
+    width: 250px; /* Ancho de tu imagen */
+    height: 42px; /* Alto de tu imagen */
+  }
+  
+  .MOTO3 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .MOTO3:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+  .MOTO4 {
+    position: relative;
+    width: 250px; /* Ancho de tu imagen */
+    height: 42px; /* Alto de tu imagen */
+  }
+  
+  .MOTO4 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .MOTO4:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+  .MOTO5 {
+    position: relative;
+    width: 250px; /* Ancho de tu imagen */
+    height: 42px; /* Alto de tu imagen */
+  }
+  
+  .MOTO5 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .MOTO5:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+.seccion333{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px; /* Espacio entre las imágenes */
+    text-align: center;
+} 
+.MOTO6 {
+    position: relative;
+    width: 300px; /* Ancho de tu imagen */
+    height: 150px; /* Alto de tu imagen */
+  }
+  
+  .MOTO6 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .MOTO6:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+  .MOTO7 {
+    position: relative;
+    width: 300px; /* Ancho de tu imagen */
+    height: 150px; /* Alto de tu imagen */
+  }
+  
+  .MOTO7 img {
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  .MOTO7:hover img {
+    transform: scale(1.2); /* Aplica un aumento del 20% en el tamaño al pasar el mouse */
+  }
+
+.footerr3{
+    width: 1400px;
+    height: 100px;
+    background-color: rgb(47, 203, 255);
+    border: 2px solid #333; 
+    margin: 2px; 
+    padding: 5px; 
+    text-align: center;
+    border-radius: 10px;
+}
